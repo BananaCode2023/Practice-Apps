@@ -1,0 +1,32 @@
+.homepage-section{
+    display: block;
+    margin-inline: auto;
+    margin-block: auto;
+    text-align: center;
+}
+
+.project-links {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    
+    a{
+        font-size: 12px;
+        color: var(--white);
+        background-color: var(--accent);
+        border: 1px solid var(--accent);
+        border-radius: 4px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.3s;
+        padding: 4px 8px;
+
+        &:hover{
+            background-color: var(--secondary);
+            border: 1px solid var(--secondary);
+        }
+    }
+}

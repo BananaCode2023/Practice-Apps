@@ -1,0 +1,140 @@
+.todolist-section{
+    background: var(--accent);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.todolist-container{
+    padding: 32px 32px;
+    border: none;
+    border-radius: 16px;
+    width: 100%;
+    margin-inline: auto;
+    max-width: 360px;
+
+    h2{
+        text-align: center;
+        color: var(--black);
+        margin-bottom: 16px;
+    }
+    .todolist-form{
+        display: flex;
+        gap: 8px;
+        margin-bottom: 16px;
+
+        input{
+            width: 70%;
+            border: 1px solid var(--light-gray);    
+            padding: 8px;
+            border-radius: 4px;
+        }
+        button{
+            width: 30%;
+            color: var(--white);
+            background-color: var(--secondary);
+            border: 1px solid var(--secondary);    
+            border-radius: 4px;
+            padding: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .todolist-status-buttons{
+        display: flex;
+        gap: 8px;
+        justify-content: space-between;
+        width: 80%;
+        margin-inline: auto;
+
+        .todolist-status-button{
+            width: 100%;
+            padding: 8px;
+            border: 1px solid var(--dark-gray);
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+            color: var(--dark-gray);
+
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .todolist-status{
+        margin-block: 16px;
+        padding-block: 16px;
+        background-color: #f1f1f1;
+        border: none;
+        border-radius: 8px;
+
+        p{
+            font-size: 12px;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+    }
+    
+    .todolist-compilation{
+        .todo-list{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--light-gray);
+
+            .todolist-text{
+                display: flex;
+                align-items: center;
+                width: 80%;
+                font-size: 14px;
+                gap: 8px;
+                
+                input{
+                    cursor: pointer;
+                }
+            }
+            .todolist-btn{
+                width: 20%;
+                padding: 4px;
+                color: var(--white);
+                background-color: var(--error);
+                border: 1px solid var(--error);
+                border-radius: 4px;
+                font-size: 10px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+
+        }
+    }
+    .todolist-instructions{
+        margin-top: 32px;
+        ul{
+            font-size: 12px;
+        }
+    }
+}
+
+#task:checked + label {
+    text-decoration: line-through;
+}
+
+.todolist-status-button.active{
+    color: var(--white) !important;
+    background-color: var(--accent) !important;
+    border: 1px solid var(--accent) !important;
+}

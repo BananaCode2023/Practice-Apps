@@ -1,0 +1,39 @@
+:root{
+    --font-family: 'montserrat';
+    --black: #1e1e1e;
+    --white: #ffffff;
+    --light-gray: #ccc;
+    --dark-gray: #999;
+    --accent: #2C4DA7;
+    --secondary: #378527;
+    --access: #008000;
+    --error: #800000;
+    --textHeading: uppercase;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    background-color: var(--white);
+}
+
+body{
+    font-family: var(--font-family);
+    background-color: #f1f1f1;
+}
+h1,h2,h3,h4,h5{
+    text-transform: var(--textHeading);
+}
+section{
+    padding: 96px 64px !important;
+    @media(max-width: 768px){
+        padding: 64px 24px !important;
+    }
+}
+
+.marketplace{
+    background-color: #f1f1f1;
+    padding-top: 32px;
+}
