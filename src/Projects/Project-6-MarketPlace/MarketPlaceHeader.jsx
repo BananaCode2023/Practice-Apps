@@ -11,6 +11,7 @@ export function MarketPlaceHeader({ currentCart }) {
   return (
     <div className="market-place-header">
       <Link className="market-place-logo" to="/marketplace">
+        <p><strong>Project 6</strong></p>
         <h3>🛍️ Marketplace</h3>
       </Link>
 

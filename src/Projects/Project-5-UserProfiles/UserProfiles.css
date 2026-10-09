@@ -37,6 +37,10 @@
             text-decoration: underline;
             text-underline-offset: 4px;
         }
+
+        p{
+            color: var(--black);
+        }
     }
     
     .user-profile-logo{

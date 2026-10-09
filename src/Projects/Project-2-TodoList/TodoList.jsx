@@ -55,6 +55,7 @@ export function TodoList() {
 
       <section className="todolist-section">
         <div className="todolist-container">
+          <p><strong>Project 2</strong></p>
           <h2>📝 My Todo List</h2>
 
           <div className="todolist-form" >

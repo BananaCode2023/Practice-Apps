@@ -13,6 +13,13 @@
     margin-inline: 32px;
     background-color: var(--white);
 
+    @media(max-width: 525px){
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+
     .market-place-logo{
         color: var(--black);
         text-decoration: none;
@@ -22,9 +29,15 @@
             font-size: 12px;
         }
 
+        @media(max-width: 525px){
+            font-size: 14px;
+            text-align: center;
+        }
+
         &:hover{
             opacity: 0.7;
         }
+
     }
 
     .market-place-column{
@@ -145,6 +158,10 @@
         justify-content: space-between;
         border-radius: 0 0 16px 16px;
 
+        @media(max-width: 768px){
+            justify-content: center;
+        }
+
         h5{
             color: var(--black);
             min-height: 56px;
@@ -152,10 +169,6 @@
         p{
             font-size: 12px;
             margin-bottom: 8px;
-
-            @media(max-width: 768px){
-                height: 96px;
-            }
         }
 
         .marketplace-product-price{
@@ -334,9 +347,7 @@
     margin-top: -24px;
 }
 
-
 .cart-item{
-    
     .product-name{
         width: 50%;
     }
@@ -355,6 +366,10 @@
     .product-price, .product-quantity, .product-subtotal, .product-btn{
         width: 12.5%;
         min-width: 150px;
+
+        @media(max-width: 880px){
+            min-width: unset;
+        }
 
         button{
             width: 100%;

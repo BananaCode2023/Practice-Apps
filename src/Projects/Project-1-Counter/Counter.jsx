@@ -26,6 +26,7 @@ export function Counter () {
                 <div className="counter-container">
                     
                     <div className="counter-box">
+                        <p><strong>Project 1</strong></p>
                         <h2>🎯 Counter App</h2>
                         <div className=
                             {

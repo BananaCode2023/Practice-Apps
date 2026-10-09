@@ -40,7 +40,7 @@ export function UserProfiles ({clickedUserId ,setClickedUserId}) {
             <title>User Profiles App</title>
 
             <section className="user-profile-section">
-                
+
                 <UserProfilesHeader />
 
                 <UserProfileGrid 
